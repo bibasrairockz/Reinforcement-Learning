@@ -25,6 +25,7 @@ Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
+
 ## Running the Project
 ### Clone the repository:
 
@@ -38,6 +39,7 @@ cd DDPG-LunarLander
 ```bash
 python torch_lunar_lander.py
 ```
+
 ![lunar-lander](https://github.com/user-attachments/assets/914bab77-1c1f-45ff-ae7d-65008d45edec)  
 
 ![image](https://github.com/user-attachments/assets/8955e088-678c-42ec-b041-303303a41eb5)
