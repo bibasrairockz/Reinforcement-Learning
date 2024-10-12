@@ -20,7 +20,7 @@ for i in range(1000):
 
     while not done:
         act= agent.choose_action(obs)
-        new_state, reward, done, truncated, info = env.step(act)  # Unpack five values
+        new_state, reward, done, truncated, info = env.step(act) 
         # print("Observation shape after step:", np.array(new_state).shape)
         agent.remember(obs, act, reward, new_state, int(done or truncated))
         agent.learn()
@@ -31,7 +31,7 @@ for i in range(1000):
     print('episode ', i, 'score %.2f' % score,
           '100 game average %.2f' % np.mean(score_history[-100:])) 
     if i % 25 == 0:
-        agent.save_models ()
+        agent.save_models()
 
 filename = 'lunar-lander.png'
 plotLearning(score_history, filename, window=100)
